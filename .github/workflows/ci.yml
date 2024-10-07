@@ -36,18 +36,6 @@ jobs:
         name: jacoco-html-report
         path: target/site/jacoco/index.html
 
-    - name: Generate JaCoCo Badges for Module 1
-      id: jacocoMod1
-      uses: cicirello/jacoco-badge-generator@v2
-      with:
-        generate-branches-badge: true
-        jacoco-csv-file: module1/target/site/jacoco/jacoco.csv
-        coverage-badge-filename: jacoco1.svg
-        branches-badge-filename: branches1.svg
-        coverage-label: coverage (module 1)
-        branches-label: branches (module 1)
-        workflow-summary-heading: Module 1 JaCoCo Test Coverage Summary
-
     - name: Generate JaCoCo Badges for Module 2
       id: jacocoMod2
       uses: cicirello/jacoco-badge-generator@v2
