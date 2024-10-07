@@ -37,4 +37,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: jacoco-html-report
-        path: target/site/jacoco/index.html
+        path: ${{ github.worspace }}target/site/jacoco/index.html
