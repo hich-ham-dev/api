@@ -28,13 +28,13 @@ jobs:
       run: mvn test
 
     - name: Upload JaCoCo report (XML)
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: jacoco-report
         path: target/site/jacoco/jacoco.xml
 
     - name: Upload JaCoCo HTML report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: jacoco-html-report
         path: target/site/jacoco/index.html
