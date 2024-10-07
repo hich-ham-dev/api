@@ -29,6 +29,3 @@ jobs:
       with:
         name: jacoco-html-report
         path: ${{ github.worspace }}target/site/jacoco/index.html
-        
-    - name: Coverage Badge
-      uses: we-cli/coverage-badge-action@v1.0.1  
