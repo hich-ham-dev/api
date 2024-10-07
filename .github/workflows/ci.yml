@@ -31,10 +31,10 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: jacoco-report
-        path: target/site/jacoco/jacoco.xml # Chemin vers le rapport XML
+        path: target/site/jacoco/jacoco.xml
 
     - name: Upload JaCoCo HTML report
       uses: actions/upload-artifact@v2
       with:
         name: jacoco-html-report
-        path: target/site/jacoco/index.html # Chemin vers le rapport HTML de JaCoCo
+        path: target/site/jacoco/index.html
