@@ -93,6 +93,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          puch: true
+          push: true
           tags: hichhamdev/m2i-api:latest
           
