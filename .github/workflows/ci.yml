@@ -44,6 +44,9 @@ jobs:
         run: |
           echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
           echo "branch coverage = ${{ steps.jacoco.outputs.branches }}"
+
+      - name: Pull latest changes
+        run: git pull origin main
           
       - name: Commit the badge (if it changed)
         run: |
